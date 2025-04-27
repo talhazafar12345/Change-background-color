@@ -1,0 +1,50 @@
+Index.html
+
+<button onclick="print()">Change Background Color</button>
+<button class="btn" onclick="window.location.reload()">Set Default Color</button>
+
+
+Style.CSS
+
+button{
+
+position: relative;
+left: 160px;
+margin-top: 20%;
+height: 50px;
+background-color: darkorange;
+color: white;
+border: none;
+border-radius: 40px;
+font-size: 20px;
+
+
+  }
+
+
+  .btn{
+    width: 180px;
+    padding-right: 5px;
+  }
+
+
+App.JS
+
+function print(){
+
+
+var colors=["green","orange","blue","purple","violet","yellow","cyan"]
+
+var setColor=colors[Math.floor(Math.random()*colors.length)]
+
+document.body.style.backgroundColor=setColor
+
+
+
+
+
+}
+
+
+
+
